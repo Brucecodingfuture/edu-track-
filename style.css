@@ -1,0 +1,86 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    padding: 3px;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #555856;
+    font-weight: 600;
+    transition: .5s;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(8, 8, 155);
+}
+
+.active {
+    color: black;
+}
+
+.logo {
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo span {
+    color: rgb(42, 42, 110);
+}
+
+
+.navbar {
+    position: fixed;
+    width: 85%;
+    top: 0;
+    align-items: center;
+    display: flex;
+    margin: 20px 80px;
+    padding: 20px;
+    justify-content: space-around;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border-right-color: 2px solid black;
+    border-left-color: black;
+}
+
+nav a {
+    margin-left: 20px;
+}
+
+section {
+    padding: 100px 10px;
+
+}
+
+main {
+    overflow: hidden;
+}
+
+.hero {
+    background: linear-gradient(rgb(138, 132, 132), rgb(255, 255, 255));
+    height: 100vh;
+    z-index: 1;
+    margin-top: 3rem;
+    border-radius: 70px 70px 120px 120px;
+} */
+
+* {
+    font-family: "Roboto", sans-serif;
+    padding: 3px;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
