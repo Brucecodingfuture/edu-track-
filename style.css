@@ -79,16 +79,18 @@ main {
     border-radius: 70px 70px 120px 120px;
 } 
 */
-*,*::before, *::after {
+*,
+*::before,
+*::after {
     font-family: "Roboto", sans-serif;
     padding: 3px;
     margin: 0;
     box-sizing: border-box;
     text-transform: capitalize;
     text-decoration: none;
-} 
+}
 
-body{
+body {
     color: var(--text);
     background-color: var(--bg);
     line-height: 1.6;
@@ -96,42 +98,83 @@ body{
     display: flex;
     flex-direction: column;
 }
-main{
+
+main {
     flex: 1;
 }
 
 /* Container */
-.container{
+.container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 24px;
 }
-a{
+
+a {
     color: black;
     font-weight: bold;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
-:root{
+
+:root {
     --primary-color: #2563eb;
-    --primary-dark:#1d4ed8;
-    --secondary:#10b981;
-    --danger:#ef4444;
-    --warning:#f59e0b;
-    --grade-a:#10b981;
-    --grade-b:#2563eb;
-    --grade-c:#f59e0b;
-    --grade-d:#f97316;
-    --grade-f:#ef4444;
-    --bg:#f8fafc;
-    --surface:#ffffff;
-    --text:#1e293a;
-    --text-muted:#64748b;
-    --border:#3f4347;
-    --shadow-sm:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-    --shadow-md:0 1px 12px 0 rgb(24, 24, 26);
-    --shadow-lg:0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); 
-    --radius:8px;
-    --radius-lg:12px;
+    --primary-dark: #1d4ed8;
+    --secondary: #10b981;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --grade-a: #10b981;
+    --grade-b: #2563eb;
+    --grade-c: #f59e0b;
+    --grade-d: #f97316;
+    --grade-f: #ef4444;
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --text: #1e293a;
+    --text-muted: #64748b;
+    --border: #3f4347;
+    --shadow-sm: 0 1rem 1rem  rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 1rem 1rem rgb(24, 24, 26);
+    --shadow-lg: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    --radius: 8px;
+    --radius-lg: 12px;
+}
+
+.navbar {
+    background-color: var(--surface);
+    /* border-bottom: 1px solid var(--border); */
+    height: 64px;
+    padding: 0px 12px;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm)
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+}
+
+nav {
+    display: flex;
+    gap: 4px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: var(--radius);
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: color 0.2s, background-color 0.2s;
+    font-size: 0.95rem;
 }
