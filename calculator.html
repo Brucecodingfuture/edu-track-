@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edu-Track - Calculator</title>
-    <link rel="stylesheet" href="/Edu-Track/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -26,8 +26,8 @@
             </div>
         </section>
         <section class="container">
-            <div class="stat-grid" style="margin-bottom: 32px;">
-                <div class="stat-card"> 
+            <div class="stats-grid" style="margin-bottom: 32px;">
+                <div class="stat-card">
                     <div class="stat-number" id="avg-display">--%</div>
                     <div class="stat-label">Weighted Average</div>
                 </div>
@@ -43,7 +43,8 @@
                     <div class="stat-number" id="credits-display">--</div>
                     <div class="stat-label">Total Credits</div>
                 </div>
-                <div class="card" style="background-color: var(--surface); padding: 32px; border-radius: var(--radius-lg); border: 2px solid var(--border); box-shadow: var(--shadow-sm);">
+                <div class="card"
+                    style="background-color: var(--surface); padding: 32px; border-radius: var(--radius-lg); border: 2px solid var(--border); box-shadow: var(--shadow-sm);">
                     <h3>Overall Progress</h3>
                     <div class="progress-track">
                         <div class="progress-bar" id="progress-bar"></div>
@@ -65,11 +66,13 @@
             </div>
         </section>
     </main>
-     <footer class="footer">
+    <footer class="footer">
         <p>&copy; 2026 Edu-Track. All rights reserved. Level Iga-Now Tech Program Internship</p>
     </footer>
 
     <script src="app.js"></script>
+    <script src="data.js"></script>
+    <script src="subject.js"></script>
 </body>
 
 </html>

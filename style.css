@@ -160,7 +160,7 @@ a {
     font-weight: 800;
     font-size: 1.4rem;
     cursor: pointer;
-    color: var(--grade-c);
+    color: var(--primary-color);
     letter-spacing: -0.5px;
 }
 
@@ -181,8 +181,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: #ffffff;
-    background-color: #5f5b5b;
+    color: var(--primary-color);
+    background-color: #edeff1;
 }
 
 .footer {
@@ -211,12 +211,12 @@ nav a.active {
 }
 
 .hero h1 span {
-    color: var(--grade-c);
+    color: var(--primary-color);
 }
 
 .hero .subtitle {
     font-size: 1.1rem;
-    color: var(--grade-a);
+    color: var(--text-muted);
 }
 
 .stats-section {
@@ -466,20 +466,25 @@ nav a.active {
         cursor: pointer;
         color: var(--text);
     }
-    .hero{
+
+    .hero {
         padding: 48px 20px;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 1.7rem;
     }
-    .stats-grid{
+
+    .stats-grid {
         grid-template-columns: 1fr 1fr;
         gap: 12px;
     }
-    .subject-grid{
+
+    .subject-grid {
         grid-template-columns: 1fr;
     }
-    .page-header .container{
+
+    .page-header .container {
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
